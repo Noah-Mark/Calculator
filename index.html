@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Calculator</title>
 </head>
-<body>
+<body id="id1">
    <div class="container">
     <form class="calculator" name="calc">
         <input type="text" readonly class = "value" name = "txt"/>
@@ -31,6 +31,17 @@
         <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
     </form>
    </div>
+
+   <section>
+    <button type="button" class="button-1"
+onclick="document.getElementById('id1').style.background = 'linear-gradient(blue, aquamarine)'"></button>
+   </section>
+   <button type="button" class="button-2"
+onclick="document.getElementById('id1').style.background = 'linear-gradient(rgb(255, 17, 0), rgb(255, 236, 127))'"></button>
+   </section>
+   <button type="button" class="button-3"
+onclick="document.getElementById('id1').style.background = 'linear-gradient(rgb(153, 0, 255), rgb(255, 0, 255))'"></button>
+   </section>
    <script type = "text/javascript" src="vanilla-tilt.js"></script>
    <script type="text/javascript">
 	VanillaTilt.init(document.querySelector(".container"), {

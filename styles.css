@@ -8,16 +8,27 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(71, 0, 104);
+    background: rgba(0, 0, 0, 0.795);
 }
 body::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(blue, aquamarine);
+    background: linear-gradient(rgb(0, 255, 136), rgb(198, 243, 0));
     width: 100%;
     height: 100%;
+    clip-path: circle(20% at 35% 30%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(255, 0, 85), rgb(235, 0, 243));
+    width: 100%;
+    height: 100%;
+    clip-path: circle(20% at 70% 70%);
 }
 
 .container{
@@ -29,7 +40,7 @@ body::before{
     backdrop-filter: blur(15px);
     border-top: 1px solid rgb(255, 255, 255, 0.2);
     border-left: 1px solid rgb(255, 255, 255, 0.2);
-    box-shadow: 5px 5px 30px aqua;
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
 }
 .container .calculator{
     position: relative;
@@ -82,4 +93,31 @@ body::before{
 }
 .equal{
     background: rgba(38, 0, 177, 0.281);
+}
+.button-1{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(blue, aquamarine);;
+}
+.button-2{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(255, 17, 0), rgb(255, 236, 127));;
+}
+.button-3{
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(153, 0, 255), rgb(255, 0, 255));;
 }
